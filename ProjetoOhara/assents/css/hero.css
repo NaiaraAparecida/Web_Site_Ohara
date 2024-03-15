@@ -1,0 +1,53 @@
+.hero{
+    padding: 15px;
+    background-color: white;
+    border-radius: 15px;
+    width: 80%;
+    margin: 7rem auto;
+}
+
+.hero-text{
+    text-align: center;
+}
+
+.hero-btn{
+    background-color: #001f3f;
+    border: 1px solid #001f3f;
+    color: #ffff;
+    padding: 2px 2px; 
+    border-radius: 12px;
+    font-size:18px;
+    width: 150px;
+    margin: 4rem auto;
+    margin-bottom: 12px;
+}
+
+.hero-btn:hover{
+    cursor: pointer;
+    animation: hero-btn 1s ease-in-out infinite ;
+}
+
+
+.hero-btn:hover {
+    background-color: #001f3f;
+    border-color: #001f3f;
+    color:#ffff
+}
+
+.fa-arrow-right {
+    margin-left: 8px;
+}
+
+/*keyframes para criar animação*/
+
+@keyframes hero-btn {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+        filter: drop-shadow (0 0 4px #001f4f );
+    }
+}

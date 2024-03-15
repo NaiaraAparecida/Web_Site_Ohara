@@ -1,0 +1,72 @@
+:root {
+    --body-font: "Comic Neue", cursive;
+    --color-gray-100: #f4f4f4;
+    --color-blue-100: #001f3f;
+    --color-light-100: #ffffff;
+    --color-darkblue-100: #1a237e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #ffff;
+    transition: .5s;
+}
+
+a:hover {
+    color: var(--color-gray-100);
+}
+
+/* Media queries para ajuste de responsividade */
+
+/* Para tablets e abaixo */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-text h2, .hero-text p, .btn {
+        font-size: 2rem; /* Ajusta o tamanho da fonte */
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .hero-image img {
+        width: 80%; /* Ajusta a largura da imagem */
+    }
+}
+
+@media (max-width: 480px) {
+    .header-page {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p, .btn {
+        width: 90%;
+    }
+}

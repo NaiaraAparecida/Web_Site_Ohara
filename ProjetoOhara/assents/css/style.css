@@ -1,0 +1,74 @@
+body {
+    font-size: 1.6rem;
+    font-family: var(--body-font);
+    line-height: 1.5;
+    min-height: 100vh;
+    color: #000;
+    background-color: var(--color-gray-100);
+}
+
+/**header da pagina**/
+.header-page {
+    width: 100%;
+    height: 85px;
+    margin: 0 auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-blue-100);
+    color:var(--color-light-100);
+}
+
+
+.header-page ul{
+    display: flex;
+    gap: 30px;
+    padding-right: 25px;
+}
+
+
+.header-page img{
+    width: 80px;
+    height: 80px;
+}
+
+.header-page h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***fim do header da pagina**/
+
+
+/**** btn do site *****/
+.btn {
+    color: #FFFF;
+    border: 1px solid var(--color-darkblue-100);
+    padding: 8px 30px;
+    border-radius: 16px;
+    background-color: var(--color-darkblue-100);
+}
+
+.btn:hover {
+    background-color: #FFFF;
+    border-color: var(--color-darkblue-100);
+    color: var(--color-darkblue-100);
+}
+
+/* Animação de rotação para a imagem quando o mouse passa sobre ela */
+.header-page img:hover {
+    animation: rotateImage 1s linear infinite; /* Aplicação da animação */
+}
+
+/* Definição dos keyframes */
+@keyframes rotateImage {
+    from {
+        transform: rotateY(0deg); /* Rotação inicial */
+    }
+    to {
+        transform: rotateY(360deg); /* Rotação completa */
+    }
+}
+
+/**fim do header da pagina**/
